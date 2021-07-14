@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone</title>
+    <style>
+        body {
+            font: normal 1.5em arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fronteira</h1>
+    Seu país: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Enviar documentos" onclick="checar()">
+    <p>Não está funcionando :P</p>
+    <script>
+        var txtp = document.getElementById('txtpais')
+        var pais = String(txtp.text)
+        function checar() {
+            if(pais == 'Brasil') {
+                alert('Vá para a fila da imigração, você é estrangeiro')
+            }else {
+                alert('Bem vindo de volta, pode entrar!')
+            }
+        }
+    </script>
+</body>
+</html>
