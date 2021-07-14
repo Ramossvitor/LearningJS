@@ -16,7 +16,7 @@
 <body>
     <h1>Iniciando estudos com DOM</h1>
     <p id="resultado">Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <p class="teste">Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
     <div id="msg">Clique em mim</div>
     </br>
     <script>
@@ -34,11 +34,12 @@
         var p3 = window.document.querySelector('p#resultado')
         p3.style.color = 'yellow'
 
+        // Seleção de objetos por Classe
+        var p5 = window.document.getElementsByClassName("teste")
+        p5.style.background = 'gray'
+
         // Seleção de objetos por nome
         var p4 = window.document.getElementsByName()
-
-        // Seleção de objetos por Classe
-        var p5 = window.document.getElementsByClassName()
 
     </script>
 </body>
