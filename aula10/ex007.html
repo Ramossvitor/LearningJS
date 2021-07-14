@@ -7,11 +7,21 @@
     <title>Somando Números</title>
     <style>
         body {
+            background-color: whitesmoke;
             font: normal 18pt Arial;
         }
         input {
             font: normal 18pt Arial;
             width: 100px;
+        }
+
+        div#res {
+            padding: 10px;
+            margin-top: 15px;
+            width: 600px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+            background-color: white;
         }
     </style>
 </head>
@@ -20,7 +30,7 @@
     <input type="number" name="txtn1" id="txtn1"> +
     <input type="number" name="txtn2" id="txtn2">
     <input type="button" value="Somar" onclick="somar()">
-    <div id="res">Resultado</div>
+    <div id="res">Resultado aparecerá aqui</div>
     <script>
         function somar() {
             var tn1 = window.document.getElementById('txtn1') 
@@ -29,7 +39,7 @@
             var vn1 = Number(tn1.value) 
             var vn2 = Number(tn2.value)
             var s = vn1 + vn2
-            res.innerHTML = A soma entre ${vn1} e ${vn2} é ${s}
+            res.innerHTML = `A soma entre ${vn1} e ${vn2} é <strong>${s}</strong>`
         }
     </script>
 </body>
